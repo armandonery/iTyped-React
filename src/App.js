@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+import React, { Component } from 'react'
+import { init } from 'ityped'
+import './App.css'
+  
+  export default class Hello extends Component {
+    componentDidMount(){
+      const myElement = document.querySelector('#myElement')
+      init(myElement, { 
+        showCursor: false,
+        loop: true,
+        strings: ['Creative', 'Focused', 'Decided'],
+        typeSpeed: 100,
+        startDelay: 500,
+        backDelay: 500
+      })
+    }
+    render(){
+      return (
+        <div>
+          <h1>Web Developer</h1>
+          <p id="myElement"></p>
+        </div>
+      )
+    }
+  }
