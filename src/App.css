@@ -20,6 +20,18 @@ h1 {
   color: #697B87;
 }
 
+#span {
+  font-size: 15px;
+  padding-left: 15px;
+  color: #14AFA6; 
+}
+
+#sup {
+  font-size: 15px;
+  padding-right: 15px;
+  color: #DAD400; 
+}
+
 /*starts iTyped cursor styles*/
 
 .ityped-cursor {
